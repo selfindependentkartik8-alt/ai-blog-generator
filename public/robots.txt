@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aibloggenerator.krishaiworks.com/sitemap.xml
