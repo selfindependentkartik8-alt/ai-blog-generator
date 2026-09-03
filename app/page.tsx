@@ -772,45 +772,199 @@ export default function Home() {
 
       </section>
 
-      {/* FOOTER */}
+  {/* FOOTER */}
 
-      <footer className="relative z-10 border-t border-white/5">
+<footer className="relative z-10 border-t border-white/5">
 
-        <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-5 px-4 py-8 text-center sm:flex-row sm:px-8 sm:text-left">
+  <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-8">
 
-          <div className="flex items-center gap-3">
+    {/* RELATED TOOLS */}
 
-            <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-emerald-400/20 bg-white/5">
+    <div className="mb-12">
 
-              <img
-                src="/logo.png"
-                alt="KrishAIWorks"
-                className="h-full w-full rounded-full object-cover"
-              />
+      <div className="mx-auto max-w-2xl text-center">
 
-            </div>
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-emerald-400">
+          Explore More
+        </p>
 
-            <div>
+        <h2 className="mt-3 text-2xl font-bold text-white sm:text-3xl">
+          More AI Writing Tools
+        </h2>
 
-              <p className="text-sm font-semibold text-white">
-                KrishAIWorks
-              </p>
+        <p className="mt-3 text-sm leading-7 text-zinc-500">
+          Explore more AI-powered tools from KrishAIWorks to write,
+          improve and create better content.
+        </p>
 
-              <p className="text-xs text-zinc-600">
-                AI Solutions That Work
-              </p>
+      </div>
 
-            </div>
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+        {/* AI TEXT HUMANIZER */}
+
+        <a
+          href="https://aitexthumanizer.krishaiworks.com/"
+          className="group rounded-2xl border border-white/5 bg-white/[0.025] p-5 transition hover:-translate-y-1 hover:border-emerald-400/20 hover:bg-emerald-400/[0.03]"
+        >
+
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-400/10 bg-emerald-400/10 text-lg">
+            ✨
+          </div>
+
+          <h3 className="mt-4 text-sm font-semibold text-white transition group-hover:text-emerald-300">
+            AI Text Humanizer
+          </h3>
+
+          <p className="mt-2 text-xs leading-6 text-zinc-500">
+            Make AI-generated text sound more natural and human.
+          </p>
+
+        </a>
+
+        {/* AI GRAMMAR & WRITING FIXER */}
+
+        <a
+          href="https://aigrammarwritingfixer.krishaiworks.com/"
+          className="group rounded-2xl border border-white/5 bg-white/[0.025] p-5 transition hover:-translate-y-1 hover:border-emerald-400/20 hover:bg-emerald-400/[0.03]"
+        >
+
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-400/10 bg-emerald-400/10 text-lg">
+            ✍️
+          </div>
+
+          <h3 className="mt-4 text-sm font-semibold text-white transition group-hover:text-emerald-300">
+            AI Grammar & Writing Fixer
+          </h3>
+
+          <p className="mt-2 text-xs leading-6 text-zinc-500">
+            Fix grammar, spelling and improve your writing with AI.
+          </p>
+
+        </a>
+
+        {/* AI INSTAGRAM CAPTION GENERATOR */}
+
+        <a
+          href="https://aiinstagramcaptiongenerator.krishaiworks.com/"
+          className="group rounded-2xl border border-white/5 bg-white/[0.025] p-5 transition hover:-translate-y-1 hover:border-emerald-400/20 hover:bg-emerald-400/[0.03]"
+        >
+
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-400/10 bg-emerald-400/10 text-lg">
+            📸
+          </div>
+
+          <h3 className="mt-4 text-sm font-semibold text-white transition group-hover:text-emerald-300">
+            AI Instagram Caption Generator
+          </h3>
+
+          <p className="mt-2 text-xs leading-6 text-zinc-500">
+            Create engaging Instagram captions for your posts.
+          </p>
+
+        </a>
+
+        {/* AI LINKEDIN POST GENERATOR */}
+
+        <a
+          href="https://ailinkedinpostgenerator.krishaiworks.com/"
+          className="group rounded-2xl border border-white/5 bg-white/[0.025] p-5 transition hover:-translate-y-1 hover:border-emerald-400/20 hover:bg-emerald-400/[0.03]"
+        >
+
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-400/10 bg-emerald-400/10 text-lg">
+            💼
+          </div>
+
+          <h3 className="mt-4 text-sm font-semibold text-white transition group-hover:text-emerald-300">
+            AI LinkedIn Post Generator
+          </h3>
+
+          <p className="mt-2 text-xs leading-6 text-zinc-500">
+            Generate professional and engaging LinkedIn posts with AI.
+          </p>
+
+        </a>
+
+      </div>
+
+      {/* EXTRA RELEVANT LINK */}
+
+      <div className="mt-4 flex justify-center">
+
+        <a
+          href="https://aiyoutubetitledescriptiongenerator.krishaiworks.com/"
+          className="group flex w-full max-w-md items-center gap-4 rounded-2xl border border-white/5 bg-white/[0.025] p-5 transition hover:-translate-y-1 hover:border-emerald-400/20 hover:bg-emerald-400/[0.03]"
+        >
+
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-emerald-400/10 bg-emerald-400/10 text-lg">
+            🎬
+          </div>
+
+          <div>
+
+            <h3 className="text-sm font-semibold text-white transition group-hover:text-emerald-300">
+              AI YouTube Title & Description Generator
+            </h3>
+
+            <p className="mt-1 text-xs leading-6 text-zinc-500">
+              Create optimized titles and descriptions for YouTube videos.
+            </p>
 
           </div>
 
-          <p className="text-xs text-zinc-600">
-            © 2026 KrishAIWorks. Built with AI.
-          </p>
+        </a>
+
+      </div>
+
+    </div>
+
+    {/* FOOTER MAIN */}
+
+    <div className="border-t border-white/5 pt-8">
+
+      <div className="flex flex-col items-center justify-between gap-6 text-center sm:flex-row sm:text-left">
+
+        {/* BRAND */}
+
+        <div className="flex items-center gap-3">
+
+          <div className="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full border border-emerald-400/20 bg-white/5">
+
+            <img
+              src="/logo.png"
+              alt="KrishAIWorks"
+              className="h-full w-full rounded-full object-cover"
+            />
+
+          </div>
+
+          <div>
+
+            <p className="text-sm font-semibold text-white">
+              KrishAIWorks
+            </p>
+
+            <p className="text-xs text-zinc-600">
+              AI Solutions That Work
+            </p>
+
+          </div>
 
         </div>
 
-      </footer>
+        {/* COPYRIGHT */}
+
+        <p className="text-xs text-zinc-600">
+          © 2026 KrishAIWorks. Built with AI.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
 
     </main>
   );
