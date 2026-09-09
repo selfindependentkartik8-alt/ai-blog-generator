@@ -64,6 +64,70 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://krishaiworks.com/#organization",
+      name: "KrishAIWorks",
+      url: "https://krishaiworks.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://krishaiworks.com/logo.png",
+        width: 512,
+        height: 512,
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://krishaiworks.com/#website",
+      url: "https://krishaiworks.com",
+      name: "KrishAIWorks",
+      description:
+        "AI-powered tools, productivity utilities, automation, chatbots, websites and custom digital solutions.",
+      publisher: {
+        "@id": "https://krishaiworks.com/#organization",
+      },
+      inLanguage: "en",
+    },
+    {
+      "@type": "WebApplication",
+      "@id":
+        "https://aibloggenerator.krishaiworks.com/#webapplication",
+      name: "AI Blog Generator",
+      url: "https://aibloggenerator.krishaiworks.com/",
+      description:
+        "Generate high-quality, engaging and SEO-friendly blog posts with AI in seconds.",
+      applicationCategory: "BusinessApplication",
+      operatingSystem: "Any",
+      browserRequirements: "Requires a modern web browser.",
+      isPartOf: {
+        "@id": "https://krishaiworks.com/#website",
+      },
+      publisher: {
+        "@id": "https://krishaiworks.com/#organization",
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aibloggenerator.krishaiworks.com/#webpage",
+      url: "https://aibloggenerator.krishaiworks.com/",
+      name: "AI Blog Generator | Create High-Quality Blog Posts",
+      description:
+        "Generate high-quality, engaging blog posts with AI in seconds. Create SEO-friendly blog content with KrishAIWorks AI Blog Generator.",
+      isPartOf: {
+        "@id": "https://krishaiworks.com/#website",
+      },
+      about: {
+        "@id":
+          "https://aibloggenerator.krishaiworks.com/#webapplication",
+      },
+      inLanguage: "en",
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -73,6 +137,14 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+
+        {/* Structured Data / JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
+        />
 
         {/* Google Analytics */}
         <Script
